@@ -1,0 +1,15 @@
+<ion-content padding *ngIf="user$ | async as user ">
+  <div class="header">
+    <h1>Gracias Por<br>Tu Registro</h1>
+    <h3>Te hemos enviado un correo de confirmacion a 
+      <span id="user_name">{{user.email}}</span></h3>
+      <h3>Por favor revise su correo & haga click en el link de verificacion</h3>
+  </div>
+ 
+  <div class="button" (click)="onSendEmail()">
+    Volver a Enviar<ion-icon name="chevron-forward-outline" ></ion-icon>
+  </div>
+ 
+  
+ 
+  </ion-content>

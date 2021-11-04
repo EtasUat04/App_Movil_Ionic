@@ -1,0 +1,18 @@
+<ion-content padding>
+  <div class="header">
+    <h3>Bienvenido,<span id="user_name">Enrique</span></h3>
+    <h1>Inicia Sesión<br>Para Continuar</h1>
+  </div>
+  <div class="form">
+    <ion-input type="email" placeholder="Correo Electronico" #email></ion-input>
+    <ion-input type="password" placeholder="Password" #password></ion-input>
+  </div>
+  <div class="button" (click)="onLogin(email,password)">
+    Acceder<ion-icon name="chevron-forward-outline" ></ion-icon>
+  </div>
+  <div class="footer">
+    <h3  [routerLink]="['/sigup']">¿No tienes una cuenta?<span>Registrate</span></h3>
+  </div> 
+  
+ 
+  </ion-content>

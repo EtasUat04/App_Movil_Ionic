@@ -1,0 +1,19 @@
+<ion-content style="border-left: 7px solid #fff;">
+  <div class="header">
+    <h3>Bienvenido</h3>
+    <h1>Crear una<br>Nueva Cuenta</h1>
+  </div>
+  <div class="form">
+    <ion-input type="email" placeholder="Correo Electronico" #email required></ion-input>
+    <ion-input type="name" placeholder="Nombre de Usuario" required></ion-input>
+    <ion-input type="password" placeholder="Password" #password required></ion-input>
+    <ion-input type="password" placeholder="Confirma tu Password" required></ion-input>
+  </div>
+  <div class="button sigup" type="submit" (click)="onRegister(email,password)">
+    Registrate<ion-icon name="chevron-forward-outline"></ion-icon>
+  </div>
+  <div class="footer sigup-footer">
+    <h3  [routerLink]="['/login']">Tengo Una Cuenta <span>Login</span></h3>
+  </div>
+  
+  </ion-content> 
